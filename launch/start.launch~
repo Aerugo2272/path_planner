@@ -1,0 +1,7 @@
+<launch>
+    <!-- My Package launch file -->
+    <node pkg="path_planner" type="path_planner" name="path_planner"  output="screen">
+    </node>
+    <include file="$(find yocs_velocity_smoother)/launch/standalone.launch" />
+
+</launch>
